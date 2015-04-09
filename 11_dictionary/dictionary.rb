@@ -15,7 +15,7 @@ class Dictionary
   end
 
   def include?(val)
-    @entries.has_key? val
+    @entries.key? val
   end
 
   def find(val)
