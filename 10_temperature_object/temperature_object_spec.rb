@@ -98,6 +98,14 @@ describe Temperature do
   #
   describe "utility class methods" do
 
+    it "from fahrenheit to celsius" do
+      Temperature.ftoc(50).should == 10
+    end
+
+    it "from celsius to fahrenheit" do
+      Temperature.ctof(50).should == 122
+    end
+
   end
 
   # Here's another way to solve the problem!
